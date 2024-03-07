@@ -1,0 +1,295 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: no-repeat linear-gradient(60deg,#c6f2f2,#c2bf55);
+  background: url(https://www.vivaplaya.net/viva/wp-content/uploads/2022/04/amanecer-playa-del-carmen-viva-playa.jpg)
+}
+.container 
+{
+  width: 1400px;
+  height: 800px;
+  margin: 200px auto auto auto;
+}
+.body
+{
+  position: relative;
+  left: 12%;
+  top: 15%;
+  bottom: 0;
+  right: 0;
+  width: 310px;
+  height: 420px;
+  background: #013EF5;
+  border-radius: 150px;
+}
+.ear
+{
+  position: absolute;
+  background: #5CC1CB;
+  top: -10px;
+  width: 125px;
+  height: 190px;
+}
+.ear:nth-child(1)
+{
+  border-radius: 100% 0% 100% 0%;
+  transform: rotate(-50deg);
+  left: 0;
+}
+.ear:nth-child(2)
+{
+  border-radius: 0% 100% 0% 0%;
+  transform: rotate(50deg);
+  right: 0;
+}
+.eyesContainer
+{
+  position: absolute;
+  top: 45px;
+  width: 180px;
+  height: 180px;
+  background: #62B5F5;
+  border-radius: 50%;
+}
+.eyesContainer:nth-child(3)
+{
+  left: 0px;
+}
+.eyesContainer:nth-child(4)
+{
+  right: 0px;
+}
+.eyesContainer::before
+{
+  content: '';
+  position: absolute;
+  width: 135px;
+  height: 125px;
+  top: 20px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.eyesContainer:nth-child(3)::before
+{
+  left: 35px;
+}
+.eyesContainer:nth-child(4)::before
+{
+  right: 35px;
+}
+.eyesContainer::after
+{
+  content: '';
+  position: absolute;
+  top: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: black;
+  z-index: 2;
+  animation-name: eyesContainer;
+  animation-duration: 1s;
+}
+.eyesContainer:nth-child(3)::after
+{
+  left: 75px;
+}
+.eyesContainer:nth-child(4)::after
+{
+  right: 35px;
+}
+.pupil
+{
+  position: absolute;
+  top: 80px;
+  width: 22px;
+  height: 10px;
+  border-radius: 80%;
+  background: #fff;
+  z-index: 5;
+}
+.eyesContainer:nth-child(3) .pupil
+{
+  left: 80px;
+}
+.eyesContainer:nth-child(4) .pupil
+{
+  right: 80px;
+}
+.mouth
+{
+  position: absolute;
+  top: 190px;
+  left: 130px;
+  width: 50px;
+  height: 50px;
+  background: #F99525;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.belly
+{
+  position: absolute;
+  top: 255px;
+  right: 29px;
+  border-radius: 50%;
+  width: 253px;
+  height: 166px;
+  background: #A9F5F0;
+  clip-path: circle(52.8% at 50% 54%);
+  animation-name: example;
+  animation-duration: 4s;
+}
+.pens
+{
+  position: absolute;
+  top: 30px;
+  width: 82px;
+  height: 30px;
+  border-radius: 50%;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid #4A3520;
+}
+.pens:nth-child(1)
+{
+  left: 50px;
+}
+.pens:nth-child(2)
+{
+  left: 140px;
+}
+.pens:nth-child(3)
+{
+  top: 60px;
+  left: 25px;
+}
+.pens:nth-child(4)
+{
+  top: 60px;
+  left: 100px;
+}
+.pens:nth-child(5)
+{
+  top: 60px;
+  left: 180px;
+}
+.pens:nth-child(6)
+{
+  top: 90px;
+  left: 60px;
+}
+.pens:nth-child(7)
+{
+  top: 90px;
+  left: 140px;
+}
+.at {
+  position: absolute;
+  top: 250px;
+  width: 100px;
+  height: 120px;
+  left: -45px;
+  border-radius: 50% 50% 0px 0px;
+  background: #636CF5;
+  z-index: 5;
+}
+.at:nth-child(6)
+{
+  transform: rotate(15deg);
+}
+.at:nth-child(8)
+{
+  transform: rotate(-15deg);
+  left: 255px;
+}
+.ats
+{
+  position: absolute;
+  top: 119px;
+  width: 35px;
+  height: 60px;
+  background: #636CF5;
+  border-radius: 0% 0% 50% 50%;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+.ats:nth-child(1)
+{
+  left: 32px;
+}
+.ats:nth-child(2)
+{
+  left: 65px;
+}
+.legs 
+{
+  position: absolute;
+  top: 350px;
+  width: 20px;
+  height: 80px;
+  background: #F99525;
+  z-index: -1;
+  
+}
+.legs:nth-child(9)
+{
+  left: 110px;
+}
+.legs:nth-child(10)
+{
+  right: 110px;
+}
+.hoof
+{
+  position: absolute;
+  top: 80px;
+  width: 8px;
+  height: 18px;
+  background: #F99525;
+ 
+}
+.hoof:nth-child(1)
+{
+  top: 77px;
+  left: -5px;
+  transform: rotate(50deg);
+}
+.hoof:nth-child(2)
+{
+  left: 6px;
+}
+.hoof:nth-child(3)
+{
+  top: 77px;
+  left: 17px;
+  transform: rotate(-50deg);
+}
+
+@keyframes eyesContainer{
+  0%{background-color: white;}
+  100%{background-color: white;}
+}
+
+@keyframes ats{
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} 
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
